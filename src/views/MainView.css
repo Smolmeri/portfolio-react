@@ -1,0 +1,14 @@
+#main {
+    background-color: #141414;
+    height: 90%;
+    width: 100%;
+    color: white;
+}
+
+.heroSection {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}

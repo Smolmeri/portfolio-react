@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import MainView from './views/MainView';
+import NavBar from './components/Nav/NavBar';
+import ProjectsView from './views/ProjectsView';
+import AboutView from './views/AboutView';
 
 const App: React.FC = () => {
+  const sectionRender = Math.floor(Math.random() * 3) + 1  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      {sectionRender === 1 &&
+        <MainView />
+      }
+      {sectionRender === 2 &&
+        <AboutView />
+      }
+      {sectionRender === 3 &&
+        <ProjectsView />
+      }
+
     </div>
   );
 }
