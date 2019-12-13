@@ -1,9 +1,8 @@
 #projects {
-    background-color: #141414;
+    background-color: white;
     height: 90%;
     width: 100%;
-    color: white;
-    
+    color: #141414;
 }
 
 
@@ -26,7 +25,7 @@ width: 100%;
 .card {
     width: 20%;
     height: 300px;
-    border: 1px solid white;
+    border: 1px solid #141414;
     display: flex;
     flex-flow: column;
     justify-content: center;
