@@ -15,7 +15,7 @@ p {
 
 .App {
   color: #141414;
-  border: #141414 5px solid;
+  /* border: #141414 5px solid; */
   margin: 20px;
   height: 95%;
 }

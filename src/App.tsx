@@ -13,18 +13,12 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <NavBar />
-      {sectionRender === 1 &&
+      
         <MainView />
-      }
-      {sectionRender === 2 &&
+      
         <AboutView />
-      }
-      {sectionRender === 3 &&
         <ProjectsView />
-      }
-      {sectionRender === 4 &&
         <ContactView />
-      }
 
     </div>
   );
