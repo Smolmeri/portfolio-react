@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectsView.css';
 import img from '../imgPlaceholder.png'
+import ProjectModal from '../components/Projects/ProjectModal';
 
 const ProjectsView = () => {
     return (
@@ -25,7 +26,9 @@ const ProjectsView = () => {
                         <p>Foo</p>
                     </div>
                 </div>
+                { <ProjectModal />}
             </div>
+            
         </section>
     );
 }

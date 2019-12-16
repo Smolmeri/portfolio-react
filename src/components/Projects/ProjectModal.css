@@ -1,0 +1,10 @@
+.modal {
+    width: 90vw;
+    height: 80vh;
+    border: .5px black solid;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
