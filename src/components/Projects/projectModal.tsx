@@ -1,11 +1,22 @@
 import React from 'react';
 import './ProjectModal.css'
 
-const ProjectModal = () => {
+const ProjectModal = (props) => {
+
+   const handleChange = () => {
+       props.onClick(0)
+   }
+
     return (
         <div className='modal'>
-            Hello World
+            <div className='closeBtn' onClick={handleChange}>
+                <span className="btn1"></span>
+                <span className="btn2"></span>
+            </div>
+            <p>Hello World</p>
+
         </div>
+
     )
 }
 

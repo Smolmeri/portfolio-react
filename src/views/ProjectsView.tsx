@@ -3,11 +3,15 @@ import './ProjectsView.css';
 import img from '../imgPlaceholder.png'
 import ProjectModal from '../components/Projects/ProjectModal';
 
-const ProjectsView = () => {
+const ProjectsView = (props) => {
 
-    const [state, setState] = useState(0);
+    const [state, setState] = useState(props);
 
     console.log(state);
+
+    const handleClick = () => {
+        setState(0)
+    }
 
 
     return (
@@ -32,9 +36,19 @@ const ProjectsView = () => {
                         <p>Foo</p>
                     </div>
                 </div>
-                {/* { <ProjectModal />} */}
+                {state === 1 &&
+                <ProjectModal onClick={handleClick} />
+                }
+                {state === 2 &&
+                <ProjectModal onClick={handleClick}  />
+                }
+                {state === 3 &&
+                <ProjectModal onClick={handleClick}  />
+                }
+                {state === 4 &&
+                <ProjectModal onClick={handleClick}  />
+                }
             </div>
-            
         </section>
     );
 }
