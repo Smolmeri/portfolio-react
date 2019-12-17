@@ -15,7 +15,7 @@
     flex-flow: column;
     padding: 10px;
     z-index: 9999999999999;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;

@@ -1,12 +1,13 @@
 .modal {
-    width: 90vw;
+    width: 50vw;
     height: 80vh;
     border: .5px black solid;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
+    padding-bottom: 20px;
 }
 
 .closeBtn {
@@ -23,6 +24,7 @@
     background-color: #141414;
     height: 3px;
     width: 25px;
+    z-index: 9999;
 }
 
 .btn1 {
@@ -33,4 +35,16 @@
 .btn2 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.modalImg {
+ background-color: cadetblue;
+ width: 100%;
+ height: 40%;
+}
+
+.modal > a {
+    border: .5px solid black;
+    justify-content: center;
+    color: black;
 }
