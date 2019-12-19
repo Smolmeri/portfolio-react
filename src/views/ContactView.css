@@ -14,10 +14,11 @@
     flex-flow: column;
     align-items: center;
     font-weight: 100;
+    background: transparent;
 }
 
 a {
+    background: transparent;
+    color: #141414;
     text-decoration: none;
-    color: white;
-
 }

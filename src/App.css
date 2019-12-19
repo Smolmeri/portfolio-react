@@ -1,7 +1,7 @@
-* {
+/* * {
   background-color: #FFFFFF;
   color: #141414;
-}
+} */
 
 html {
   width: 100vw;
@@ -21,10 +21,4 @@ p {
   /* border: #141414 5px solid; */
   height: 100%;
   width: 100%;
-}
-
-button {
-  height: 100px;
-  width: 100px;
-  background: #141414;
 }

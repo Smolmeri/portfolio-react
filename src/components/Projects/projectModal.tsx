@@ -16,15 +16,18 @@ const ProjectModal = (props) => {
   `;
 
     return (
-    
+
         <FadeInDiv className='modal'>
             <div className='closeBtn' onClick={handleChange}>
-                <span className="btn1"></span>
-                <span className="btn2"></span>
+                <div className="btn1"></div>
+                <div className="btn2"></div>
             </div>
             <img className='modalImg' src={props.imgPath} alt="project1-large" />
-            <p>{props.desc}</p>
-            <a target='_blank' href={props.url}>{props.urlName}</a>
+            <div className='modalInfo'>
+                <h1>{props.heading}</h1>
+                <p>{props.desc}</p>
+                <a target='_blank' href={props.url}>{props.urlName}</a>
+            </div>
         </FadeInDiv>
 
     )

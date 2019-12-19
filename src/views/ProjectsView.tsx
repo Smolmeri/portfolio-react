@@ -43,16 +43,16 @@ const ProjectsView = (props) => {
                     
                 </div>
                     {state === 1 &&
-                        <ProjectModal onClick={handleClick} imgPath={meeKouluun} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad.'} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
+                        <ProjectModal onClick={handleClick} imgPath={meeKouluun} heading={"Mee Kouluun"} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad.'} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
                     }
                     {state === 2 &&
-                        <ProjectModal onClick={handleClick} imgPath={wanderdicks} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
+                        <ProjectModal onClick={handleClick} imgPath={wanderdicks} heading={"Wanderdicks"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
                     }
                     {state === 3 &&
-                        <ProjectModal onClick={handleClick} imgPath={code} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
+                        <ProjectModal onClick={handleClick} imgPath={code} heading={"LOREM"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITHUB'} />
                     }
                     {state === 4 &&
-                        <ProjectModal onClick={handleClick} imgPath={code} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITLAB'}/>
+                        <ProjectModal onClick={handleClick} imgPath={code} heading={"LOREM"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITLAB'}/>
                     }
                 
             </div>
