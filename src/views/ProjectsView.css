@@ -1,9 +1,8 @@
 .projectsSection {
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 90vh;
 }       
 
 .cardsSection {
@@ -15,12 +14,11 @@
 
 .card {
     width: 20%;
-    height: 300px;
+    height: 100%;
     border: 1px solid #141414;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    background: #141414;
 }
 
 .card>img {
