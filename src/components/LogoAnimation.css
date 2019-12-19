@@ -1,0 +1,35 @@
+#logoT {
+    animation: fill 0.5s ease forwards 3s;
+}
+
+#logoT > path {
+    stroke-dasharray: 1323px;
+    stroke-dashoffset: 1323px;
+    animation: line-anim 5s ease forwards;
+}
+
+#logoDot > path {
+    stroke-dasharray: 207px;
+    stroke-dashoffset: 207px;
+    animation: line-anim 5s ease forwards .5s;
+}
+
+svg * {
+    stroke: #141414;
+    stroke-width: 10px;
+}
+
+@keyframes line-anim {
+    to {
+    stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #141414;
+    }
+}
