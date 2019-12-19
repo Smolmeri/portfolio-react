@@ -4,14 +4,14 @@ import './MainView.css'
 
 const MainView = () => {
     return (
-        <section id="main">
+      //  <section id="main">
             <div className="heroSection">
                 <h1>Tom Paavolainen</h1>
                 <div className="animationContainer">
                     <img src={logo} alt="main logo"/>
                 </div>
             </div>
-        </section>
+      //  </section>
     );
 }
 

@@ -17,7 +17,7 @@ const ProjectsView = (props) => {
 
 
     return (
-        <section id="projects">
+       // <section id="projects">
             <div className="projectsSection">
                 <h1>Projects</h1>
                 <div className="cardsSection">
@@ -53,7 +53,7 @@ const ProjectsView = (props) => {
                     }
                 
             </div>
-        </section>
+     //   </section>
     );
 }
 

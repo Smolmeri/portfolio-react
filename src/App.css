@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #FFFFFF;
   color: #141414;
+}
+
+html {
+  width: 100vw;
 }
 
 h1 {
@@ -17,8 +21,8 @@ p {
 .App {
   color: #141414;
   /* border: #141414 5px solid; */
-  margin: 20px;
-  height: 95%;
+  height: 100%;
+  width: 100%;
 }
 
 button {

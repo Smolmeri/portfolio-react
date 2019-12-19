@@ -3,7 +3,7 @@ import './ContactView.css';
 
 const ContactView = () => {
     return (
-        <section id="contact">
+        // <section id="contact">
         <div className="contactSection">
             <h1>Contact</h1>
             <div className="links">
@@ -24,7 +24,8 @@ const ContactView = () => {
                 </a>
             </div>
         </div>
-    </section>
+        
+  //  </section>
     );
 }
 

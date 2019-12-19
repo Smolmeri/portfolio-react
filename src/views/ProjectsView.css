@@ -1,17 +1,9 @@
-#projects {
-    background-color: white;
-    height: 90%;
-    width: 100%;
-    color: #141414;
-}
-
 .projectsSection {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
-    padding: 20px;
+    height: 90vh;
 }       
 
 .cardsSection {
@@ -28,6 +20,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+    background: #141414;
 }
 
 .card>img {
@@ -37,4 +30,24 @@
 
 .card>p {
     display: none;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .cardsSection {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    #projects {
+        height: 100%;
+    }
+    .card {
+        width: 80%;
+        height: 100%;
+        margin: 20px;
+    }
 }
