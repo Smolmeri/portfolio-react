@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../portfolioLetterT.png'
 import './MainView.css'
-import LogoAnimation from '../components/LogoAnimation';
+import LogoAnimation from '../components/Logo/LogoAnimation';
 
 const MainView = () => {
     return (
