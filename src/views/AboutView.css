@@ -8,9 +8,9 @@ p {
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #F7f7f7;
+    background: rgb(241, 240, 240);
     padding: 30px 0;
-    height: 50vh;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 820px) {

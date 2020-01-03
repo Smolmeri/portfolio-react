@@ -11,6 +11,10 @@
     width: 20px;
 }
 
+.bar1.bar2.bar3.change {
+    opacity: 0;
+}
+
 .burgerContainer {
     display: flex;
     flex-flow: column;
@@ -20,13 +24,43 @@
     top: 0;
     left: 0;
     background-color: transparent;
-    
 }
+
+.change {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .change:hover {
+    opacity: 1;
+  }
+  .change:before, .change:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #ffff;
+  }
+  .change:before {
+    transform: rotate(45deg);
+  }
+  .change:after {
+    transform: rotate(-45deg);
+  }
+
 
 @media only screen and (max-width: 820px) {
     
     .burgerContainer {
         align-items: flex-end;
         right: 0;
+    }
+
+    .change {
+        right: 5px;
     }
 }

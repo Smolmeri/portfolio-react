@@ -11,3 +11,16 @@
 .heroSection > h1 { 
     font-weight: 300;
 }
+
+@media only screen and (max-width: 820px) {
+
+    .heroSection {
+        width: 100vw;
+    }
+
+    .heroSection > h1 {
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 2;
+    }
+}

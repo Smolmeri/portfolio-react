@@ -6,8 +6,9 @@ import NavBar from './components/Nav/NavBar';
 import ProjectsView from './views/ProjectsView';
 import AboutView from './views/AboutView';
 import ContactView from './views/ContactView';
+import { tsPropertySignature } from '@babel/types';
 
-const App: React.FC = () => {
+const App: React.FC = (props) => {
 
   // const [state, setState] = useState(() => () => <MainView />);
   // const viewArray = [<AboutView />, <ProjectsView />, <ContactView />];
@@ -24,6 +25,8 @@ const App: React.FC = () => {
 
 
   // console.log("asdad", state)
+
+
   return (
     <div className="App">
       <NavBar />

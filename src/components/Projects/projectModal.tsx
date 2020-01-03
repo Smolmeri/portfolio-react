@@ -12,8 +12,7 @@ const ProjectModal = (props) => {
     }
 
     const FadeInDiv = styled.div`
-    animation: .5s ${keyframes`${fadeIn}`};
-  `;
+    animation: .5s ${keyframes`${fadeIn}`};`;
 
     return (
 

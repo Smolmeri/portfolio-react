@@ -5,6 +5,7 @@ import meeKouluun from '../meeKouluun.png';
 import wanderdicks from '../wanderdicks.png';
 import code from '../code.png';
 import ProjectModal from '../components/Projects/ProjectModal';
+import { stat } from 'fs';
 
 const ProjectsView = (props) => {
 
@@ -16,12 +17,19 @@ const ProjectsView = (props) => {
         setState(0)
     }
 
+    const closeModal = () => {
+        if (state != 0) {
+            setState(0)
+        }
+    }
+    
+
     
 
 
     return (
        // <section id="projects">
-            <div className="projectsSection">
+            <div className="projectsSection" onClick={closeModal}>
                 <h1>Projects</h1>
                 <div className="cardsSection">
                     <div className="card" onClick={() => setState(1)}>
@@ -54,7 +62,6 @@ const ProjectsView = (props) => {
                     {state === 4 &&
                         <ProjectModal onClick={handleClick} imgPath={code} heading={"LOREM"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GITLAB'}/>
                     }
-                
             </div>
      //   </section>
     );

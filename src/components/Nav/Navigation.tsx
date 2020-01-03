@@ -6,10 +6,11 @@ const Navigation = () => {
     return (
         <div className='navContainer'>
             <ul className='navList'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+                <a href="/"><li>Home</li></a>
+                <a href="/"><li>About</li></a>
+                <a href="/"><li>Projects</li></a>
+                <a href="/"><li>Contacts</li></a>
+                <a href="www.github.com/Smolmeri"><li>Github</li></a>
             </ul>
         </div>
     )

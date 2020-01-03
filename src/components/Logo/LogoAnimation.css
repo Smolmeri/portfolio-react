@@ -1,22 +1,17 @@
 #logoT {
-    animation: fill 0.5s ease forwards 3s;
+    animation: fill-anim 0.5s ease forwards;
 }
 
 #logoT > path {
     stroke-dasharray: 1323px;
     stroke-dashoffset: 1323px;
-    animation: line-anim 5s ease forwards;
-}
-
-#logoDot > path {
-    stroke-dasharray: 207px;
-    stroke-dashoffset: 207px;
-    animation: line-anim 5s ease forwards .5s;
+    animation: line-anim 6s ease forwards;
 }
 
 svg * {
     stroke: #141414;
     stroke-width: 10px;
+    fill: #f7f7f7;
 }
 
 @keyframes line-anim {
@@ -25,11 +20,20 @@ svg * {
     }
 }
 
-@keyframes fill {
+@keyframes fill-anim {
     from {
-        fill: transparent;
+        fill: #f7f7f7;
     }
     to {
         fill: #141414;
     }
+}
+
+@media only screen and (max-width: 820px) {
+
+    #logoT {
+        width: 100%;
+        margin-left: 5px;
+    }
+    
 }

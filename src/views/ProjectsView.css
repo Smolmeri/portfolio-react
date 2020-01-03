@@ -4,6 +4,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
+    height: 100vh;
 }       
 
 .cardsSection {
@@ -16,10 +17,15 @@
 
 .card {
     width: 20%;
-    border: 1px solid #141414;
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+
+.card:hover {
+    box-shadow:#8888 1.5px 1.5px 5px 5px;
+    transition: ease-in-out 10ms;
+    cursor: pointer;
 }
 
 .card>img {
@@ -32,6 +38,10 @@
 }
 
 @media only screen and (max-width: 820px) {
+
+    .projectsSection {
+        height: 100%;
+    }
 
     .cardsSection {
         display: flex;
