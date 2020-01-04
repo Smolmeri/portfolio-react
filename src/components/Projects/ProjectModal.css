@@ -48,6 +48,7 @@
     border: .5px solid black;
     justify-content: center;
     color: black;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 820px) {

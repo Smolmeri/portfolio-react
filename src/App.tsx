@@ -6,7 +6,6 @@ import NavBar from './components/Nav/NavBar';
 import ProjectsView from './views/ProjectsView';
 import AboutView from './views/AboutView';
 import ContactView from './views/ContactView';
-import { tsPropertySignature } from '@babel/types';
 
 const App: React.FC = (props) => {
 
@@ -29,7 +28,7 @@ const App: React.FC = (props) => {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <MainView />
       <AboutView />
       <ProjectsView />
