@@ -5,8 +5,8 @@ import meeKouluun from '../meeKouluun.png';
 import wanderdicks from '../wanderdicks.png';
 import wastic from '../wastic.jpeg';
 import code from '../code.png';
+import portfolio from '../portfolio.png';
 import ProjectModal from '../components/Projects/ProjectModal';
-import { stat } from 'fs';
 
 const ProjectsView = (props) => {
 
@@ -45,10 +45,10 @@ const ProjectsView = (props) => {
                         <img src={wastic} alt="project3" />
                         <p>Foo</p>
                     </div>
-                    {/* <div className="card" onClick={() => setState(4)}>
-                        <img src={code} alt="project4" />
+                    <div className="card" onClick={() => setState(4)}>
+                        <img src={portfolio} alt="project4" />
                         <p>Foo</p>
-                    </div> */}
+                    </div>
                     
                 </div>
                     {state === 1 &&
@@ -61,7 +61,7 @@ const ProjectsView = (props) => {
                         <ProjectModal onClick={handleClick} imgPath={wastic} heading={"Wastic"} desc={"A peer-to-peer application that allows users to upload images of food products in their kitchens to reduce food waste. Other users can find products and reserve them."} url={'https://github.com/Smolmeri/Wastic'} urlName={'GitHub'} />
                     }
                     {state === 4 &&
-                        <ProjectModal onClick={handleClick} imgPath={code} heading={"LOREM"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis cum nesciunt impedit fugit amet laudantium voluptatum in, eius ipsa id earum vitae ab blanditiis tenetur eligendi odio eos ad."} url={'https://github.com/Smolmeri'} urlName={'GitHub'}/>
+                        <ProjectModal onClick={handleClick} imgPath={portfolio} heading={"Portfolio"} desc={"This website was created to show case my projects. The site is created with React and is an ongoing project."} url={'https://github.com/Smolmeri/portfolio-react'} urlName={'GitHub'}/>
                     }
             </div>
     );
