@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import './ProjectsView.css';
-import img from '../imgPlaceholder.png'
 import meeKouluun from '../meeKouluun.png';
 import wanderdicks from '../wanderdicks.png';
 import wastic from '../wastic.jpeg';
-import code from '../code.png';
 import portfolio from '../portfolio.png';
 import ProjectModal from '../components/Projects/ProjectModal';
 
@@ -23,13 +21,8 @@ const ProjectsView = (props) => {
             setState(0)
         }
     }
-    
-
-    
-
 
     return (
-       // <section id="projects">
             <div className="projectsSection" onClick={closeModal}>
                 <h1>Projects</h1>
                 <div className="cardsSection">

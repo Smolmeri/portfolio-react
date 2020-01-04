@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../portfolioLetterT.png'
 import './MainView.css'
 import LogoAnimation from '../components/Logo/LogoAnimation';
 
