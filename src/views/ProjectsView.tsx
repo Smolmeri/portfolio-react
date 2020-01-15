@@ -8,7 +8,7 @@ import ProjectModal from '../components/Projects/ProjectModal';
 
 const ProjectsView = (props) => {
 
-    const [state, setState] = useState(props);
+    const [state, setState] = useState(0);
 
     console.log(state);
 
