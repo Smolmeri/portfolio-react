@@ -54,7 +54,7 @@ const ProjectsView = (props) => {
                         <ProjectModal onClick={handleClick} imgPath={wastic} heading={"Wastic"} desc={"A peer-to-peer application that allows users to upload images of food products in their kitchens to reduce food waste. Other users can find products and reserve them."} url={'https://github.com/Smolmeri/Wastic'} urlName={'GitHub'} />
                     }
                     {state === 4 &&
-                        <ProjectModal onClick={handleClick} imgPath={portfolio} heading={"Portfolio"} desc={"This website was created to show case my projects. The site is created with React and is an ongoing project."} url={'https://github.com/Smolmeri/portfolio-react'} urlName={'GitHub'}/>
+                        <ProjectModal onClick={handleClick} imgPath={portfolio} heading={"Portfolio"} desc={"This website was created to showcase my projects. The site is created with React and is an ongoing project."} url={'https://github.com/Smolmeri/portfolio-react'} urlName={'GitHub'}/>
                     }
             </div>
     );
