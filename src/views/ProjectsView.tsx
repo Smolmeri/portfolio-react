@@ -45,10 +45,10 @@ const ProjectsView = (props) => {
                     
                 </div>
                     {state === 1 &&
-                        <ProjectModal onClick={handleClick} imgPath={meeKouluun} heading={"Mee Kouluun"} desc={'An iOS app for users that are looking to re-educate themselfs. The app suggests possible study paths based on users questionaire asnwers. Agile working methods with daily scrums and weekly sprint reviews were used.'} url={'https://gitlab.com/oskarits/mee-kouluun/'} urlName={'GitLab'} />
+                        <ProjectModal onClick={handleClick} imgPath={meeKouluun} heading={"Mee Kouluun"} desc={'An iOS app for users that are looking to re-educate themselves. The app suggests possible study paths based on users questionaire answers. Agile working methods with daily scrums and weekly sprint reviews were used.'} url={'https://gitlab.com/oskarits/mee-kouluun/'} urlName={'GitLab'} />
                     }
                     {state === 2 &&
-                        <ProjectModal onClick={handleClick} imgPath={wanderdicks} heading={"Wanderdicks"} desc={"Webiste project created for Wanderdicks Ry, an outdoor and adventure group. Static page was converted to a dynamic one using PHP and Wordpress as a Content Management System."} url={'https://github.com/Smolmeri/wanderdicks-dynamic'} urlName={'GitHub'} />
+                        <ProjectModal onClick={handleClick} imgPath={wanderdicks} heading={"Wanderdicks"} desc={"Website project created for Wanderdicks Ry, an outdoor and adventure group. Static page was converted to a dynamic one using PHP and Wordpress as a Content Management System."} url={'https://github.com/Smolmeri/wanderdicks-dynamic'} urlName={'GitHub'} />
                     }
                     {state === 3 &&
                         <ProjectModal onClick={handleClick} imgPath={wastic} heading={"Wastic"} desc={"A peer-to-peer application that allows users to upload images of food products in their kitchens to reduce food waste. Other users can find products and reserve them."} url={'https://github.com/Smolmeri/Wastic'} urlName={'GitHub'} />
