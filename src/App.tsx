@@ -27,7 +27,7 @@ const App: React.FC = (props) => {
 
 
   return (
-    <div className="App">
+    <div id="app" className="App">
       {/* <NavBar /> */}
       <MainView />
       <AboutView />
