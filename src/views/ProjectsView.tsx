@@ -17,13 +17,9 @@ const ProjectsView = (props) => {
 
     console.log(state);
 
-    const stopScroll = () => {
-
-       
-            const root: HTMLElement = document.getElementById('root')!;
+    const stopScroll = () => {const root: HTMLElement = document.getElementById('root')!;
             disableBodyScroll(root);
-
-        
+            root.style.overflow = 'hidden';
     }
 
     const handleClick = () => {
@@ -34,6 +30,7 @@ const ProjectsView = (props) => {
         if (state !== 0) {
             const root: HTMLElement = document.getElementById('root')!;
             enableBodyScroll(root);
+            
             setState(0)
         }
     }
