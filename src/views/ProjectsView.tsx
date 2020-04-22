@@ -3,7 +3,7 @@ import './ProjectsView.css';
 import meeKouluun from '../meeKouluun.png';
 import wanderdicks from '../wanderdicks.png';
 import wastic from '../wastic.jpeg';
-import portfolio from '../portfolio.png';
+import zalando from '../zlaando.jpg';
 import ProjectModal from '../components/Projects/ProjectModal';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
@@ -67,7 +67,7 @@ const ProjectsView = (props) => {
                 <ProjectModal onClick={handleClick} imgPath={wastic} heading={"Wastic"} desc={"A peer-to-peer application that allows users to upload images of food products in their kitchens to reduce food waste. Other users can find products and reserve them."} url={'https://github.com/Smolmeri/Wastic'} urlName={'GitHub'} />
             }
             {state === 4 &&
-                <ProjectModal onClick={handleClick} imgPath={portfolio} heading={"Portfolio"} desc={"This website was created to showcase my projects. The site is created with React and is an ongoing project."} url={'https://github.com/Smolmeri/portfolio-react'} urlName={'GitHub'} />
+                <ProjectModal onClick={handleClick} imgPath={zalando} heading={"Zalando"} desc={"A in-store companion application for Zalando's offline stores called Zircle. The application was created using SwiftUI and there was weekly collaboration with the client."} url={'https://github.com/oskarits/zeitgeist'} urlName={'GitHub'} />
             }
         </div>
     );
