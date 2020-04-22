@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
-    height: 100vh;
+    height: 100%;
 }       
 
 .cardsSection {
@@ -36,6 +36,28 @@
 .card>p {
     display: none;
 }
+
+.flickr {
+    margin-top: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.flickrLink {
+    text-decoration: underline;
+}
+
+.flickr-img-container {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 820px) {
 

@@ -10,16 +10,17 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 
 
 const ProjectsView = (props) => {
-    
-   
+
+
 
     const [state, setState] = useState(0);
 
     console.log(state);
 
-    const stopScroll = () => {const root: HTMLElement = document.getElementById('root')!;
-            disableBodyScroll(root);
-            root.style.overflow = 'hidden';
+    const stopScroll = () => {
+        const root: HTMLElement = document.getElementById('root')!;
+        disableBodyScroll(root);
+        root.style.overflow = 'hidden';
     }
 
     const handleClick = () => {
@@ -30,7 +31,7 @@ const ProjectsView = (props) => {
         if (state !== 0) {
             const root: HTMLElement = document.getElementById('root')!;
             enableBodyScroll(root);
-            
+
             setState(0)
         }
     }
@@ -71,10 +72,13 @@ const ProjectsView = (props) => {
             }
 
             <div className="flickr">
-                <p>I enjoy some photography now and then. Checkout my <a href="https://www.flickr.com/photos/186507729@N08/">Flickr account</a></p>
-             
-                <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49805984708/in/dateposted-public/" title="Log in."><img src="https://live.staticflickr.com/65535/49805984708_f364a0db8a_h.jpg" width="375" height="300" alt="Log in." /></a>
-                <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49486803032/in/dateposted-public/" title="Row row row"><img src="https://live.staticflickr.com/65535/49486803032_b170d2382d_k.jpg" width="375" height="300" alt="Row row row" /></a>
+
+                <p>Now and then I enjoy some photography 📷. Checkout my <a className="flickrLink" href="https://www.flickr.com/photos/186507729@N08/">Flickr account</a> for some snaps.</p>
+
+                <div className="flickr-img-container">
+                    <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49805984708/in/dateposted-public/" title="Log in."><img src="https://live.staticflickr.com/65535/49805984708_f364a0db8a_h.jpg" width="375" height="300" alt="Log in." /></a>
+                    <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49486803032/in/dateposted-public/" title="Row row row"><img src="https://live.staticflickr.com/65535/49486803032_b170d2382d_k.jpg" width="375" height="300" alt="Row row row" /></a>
+                </div>
             </div>
         </div>
     );
