@@ -52,7 +52,7 @@ const ProjectsView = (props) => {
                     <p>Foo</p>
                 </div>
                 <div className="card" onClick={() => { setState(4); stopScroll(); }}>
-                    <img src={portfolio} alt="project4" />
+                    <img src={zalando} alt="project4" />
                     <p>Foo</p>
                 </div>
 
@@ -69,6 +69,13 @@ const ProjectsView = (props) => {
             {state === 4 &&
                 <ProjectModal onClick={handleClick} imgPath={zalando} heading={"Zalando"} desc={"A in-store companion application for Zalando's offline stores called Zircle. The application was created using SwiftUI and there was weekly collaboration with the client."} url={'https://github.com/oskarits/zeitgeist'} urlName={'GitHub'} />
             }
+
+            <div className="flickr">
+                <p>I enjoy some photography now and then. Checkout my <a href="https://www.flickr.com/photos/186507729@N08/">Flickr account</a></p>
+             
+                <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49805984708/in/dateposted-public/" title="Log in."><img src="https://live.staticflickr.com/65535/49805984708_f364a0db8a_h.jpg" width="375" height="300" alt="Log in." /></a>
+                <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/186507729@N08/49486803032/in/dateposted-public/" title="Row row row"><img src="https://live.staticflickr.com/65535/49486803032_b170d2382d_k.jpg" width="375" height="300" alt="Row row row" /></a>
+            </div>
         </div>
     );
 }
